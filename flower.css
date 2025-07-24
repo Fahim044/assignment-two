@@ -1,0 +1,31 @@
+body{
+    margin: 30px 150px 50px 150px;
+}
+nav div ul, .nav-right{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    font-size: 1.2rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul span{
+    gap: 10px;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cart p{
+    color: #000000; 
+    font-weight: 500;
+    font-size: 1.2rem;
+}
