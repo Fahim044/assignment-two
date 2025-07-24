@@ -1,6 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+@media screen and (min-width:992px) {
 body{
     margin: 30px 150px 50px 150px;
+}    
+/* .logo{
+    width: 7vw;
+    height: 12vw;
+} */
 }
+/* @media screen and (max-width:576px){
+    nav{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 67px;
+    }
+} */
+
 nav div ul, .nav-right{
     list-style: none;
     display: flex;
@@ -29,3 +64,178 @@ ul span{
     font-weight: 500;
     font-size: 1.2rem;
 }
+@media screen and (max-width:576px){
+    .hide{
+        display: none;
+    }
+    nav{
+       margin-left: 4vw;
+       margin-right: 4vw;
+       margin-top: 7vh;
+    }
+    .logo{
+        width: auto;
+        height: auto;
+    }
+}
+.banner div h1{
+    color: #000000;
+    font-weight: bold;
+    /* font-size: 65px; */
+    font-size: 3.7em;
+}
+.banner div h1 span{
+    color: #E95A08;
+    
+}
+.banner div p{
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+@media screen and (min-width:992px){
+    .banner div p{
+        /* width: 530px;
+        height: 108px; */
+        margin-top: 5vh;
+    }
+    
+}
+
+.banner{
+    display: flex;
+    gap: ;
+    
+}
+@media screen and (min-width:992px) {
+    .banner{
+        margin-top: 140px;
+    }
+    
+    
+}
+@media screen and (min-width:576.1px){
+    .for-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px){
+    .banner{
+        flex-direction: column-reverse;
+        gap: 28px;
+    }
+    
+    .banner img{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .banner div{
+        margin-left: 4vw;
+       margin-right: 4vw;
+    }
+    .banner div h1{
+        font-size: 24px;
+    }
+    .banner div p{
+        font-size: 15px;
+        text-align: left;
+    }
+    .for-non-mobile{
+        display: none;
+    }
+}
+
+.plants-section h2{
+    color: #000000;
+    font-weight: bold;
+    /* font-size: 50px; */
+    font-size: 3em;
+    text-align: center;
+}
+.plants-section span{
+    color: #E95A08;
+}
+.plants-section p{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 1.5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+.plants-section{
+    margin-bottom: 2.5vw;
+}
+@media screen and (min-width:992px){
+    .plants-section{
+        margin-top: 90px;
+    }
+}
+@media screen and (max-width:576px) 
+{   
+    .plants-section h2{
+        font-size: 24px;
+        /* margin-top: 65px; */
+        margin-top: 5vh;
+    }
+    .plants-section p{
+        font-size: 15px;
+    }
+}
+.name, .price{
+    /* text-align: center; */
+}
+.name{
+    font-weight: 500;
+    color: #111111;
+}
+.price{
+    color: #111111;
+    font-weight: bold;
+}
+.btn-cart{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+}
+@media screen and (min-width:992px){
+    .name,.price{
+        font-size: 18px;
+        margin: 0.5em;
+    }
+    .btn-cart{
+        padding: auto 50px;
+        font-size: 16px;
+        width: 270px;
+        height: 50px;
+    }
+}
+.plants-cards p{
+    text-align: center;
+}
+.plants-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    
+}
+@media screen and (min-width:992px){
+    .plants-cards div{
+        /*  */
+        width: 270px;
+        height: 485px;
+    }
+    .plants-cards{
+        margin-left: -50px;
+    }
+
+}
+@media screen and (max-width:576px){
+    
+}
+
+
